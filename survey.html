@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhar Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <section class="form1">
+        <div class="container">
+            <h1 class="main-heading">KYC Form</h1>
+            <hr>
+            <form class="form-class">
+
+                <!-- name section -->
+                <div class="form-control">
+                    <div class="heading-field">
+                        <h4 class="head4">1. Identity Details:</h4>
+                    </div>
+                    <div class="input-field">
+                        Applicant Name:
+                       <div class="input-div">
+                        <input type="text" class="name" id="name" name="first-name" placeholder="First name" required>
+                       </div> 
+
+                       <div class="input-div">
+                        <input type="text" class="lname" id="last-name" name="last-name" placeholder="Last name" required>
+                       </div>
+                    </div>
+                </div>
+
+                <!-- account section -->
+                <div class="form-control">
+                    <div class="heading-field">
+                        <h4 class="head4">2. Account Details</h4>
+                    </div>
+                    <div class="input-field">
+                       <div class="input-div">
+                        <span class="atype">Account type:</span>
+                        <input type="text" class="name" id="name" name="first-name" placeholder="e.g. SB/CB" required>
+                       </div> 
+                       <div class="input-div">
+                        <span class="ano">Account no.:</span>
+                        <input type="number" class="lname" id="last-name" name="last-name" placeholder="Account no." required>
+                       </div>
+                    </div>
+                </div>
+
+                <!-- address section -->
+                <div class="form-control">
+                    <div class="heading-field">
+                        <h4 class="head4">3. Address:</h4>
+                    </div>
+                    <div class="input-field">
+                       <div class="input-div">
+                        <input type="text" class="address" id="address" name="address" placeholder="street address" required>
+                       </div> 
+                       <div class="input-div">
+                        <input type="text" class="address" id="address" name="street" placeholder="landmark" required>
+                       </div>
+                       <div class="input-div">
+                        <input type="text" class="address" id="city" name="city" placeholder="city" required>
+                       </div>
+                       <div class="input-div">
+                        <input type="number" class="address" id="pincode" name="pincode" placeholder="e.g. 123456" required>
+                       </div>
+                       <div class="input-div">
+                        <input type="text" class="address" id="country" name="country" value="India" readonly>
+                       </div>
+                       <h5><div id="country" class="country">select state</div>
+                       <div class="input-div">
+                        <select class="form-control" name="state" required>
+                            <option value="No selection">No selction</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh	</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                       </div></h5>
+
+
+                       <!-- contact section -->
+                       <div class="form-control">
+                        <div class="heading-field">
+                            <h4 class="head4">4. Contact:</h4>
+                        </div>
+                        <div class="input-field">
+                           <div class="input-div">
+                            <input type="tel" class="contact" id="contact" name="contact" maxlength="10" required>
+                            <div id="phone" class="phone"><h6>Phone</h6></div>
+                        </div> 
+                           <div class="input-div">
+                            <input type="email" class="email" id="email" name="email" required>
+                            <div id="mail" class="mail"><h6>Email</h6></div>
+                           </div>
+                        </div>
+                    <!-- <div> -->
+                    
+
+                        <!-- personal section -->
+                        <div class="form-control">
+                            <div class="heading-field">
+                                <h4 class="head4">5. Personal Details:</h4>
+                            </div>
+                            <div class="input-field">
+                               <div class="input-div">
+                                <h5>
+                                DOB:
+                                <input class="DOB" type="date" name="DOB">
+                                </h5>
+                                <div>
+                                <h5 class="gender">Gender:
+                                    <h5>
+                                <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                <input type="radio" id="others" name="gender" value="others">
+                                    <label for="others">Others</label>
+                                </h5>
+                                </h5>
+                            </div>
+                            </div>
+                                </div> 
+                            
+                        </div>
+
+
+
+                        <!-- document section -->
+                        <div class="form-control">
+                            <div class="heading-field">
+                                <h4 class="head4">6. Documents:</h4>
+                            </div>
+                            <div class="input-field">
+                               <div class="input-div">
+                               <div class="pic">upload your photo</div>
+                                <input  class="photo" type="file" id="photo" name="photo">
+                                <div class="adr">upload address-proof</div>
+                                <input class="adrr" type="file" id="address-proof" name="address-proof">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- </div> -->
+
+                </div>
+                <button type="submit"> Submit </button>
+
+
+            </form>
+        </div>    
+    </section>
+    <hr>
+</body>
+</html>
